@@ -1,24 +1,21 @@
 import React from "react";
 import $ from 'jquery';
-import { MDBNavbar, MDBNavbarNav, MDBNavbarToggler,
-MDBCollapse, MDBNavItem, MDBNavLink, MDBView, MDBMask, MDBBox } from 'mdbreact';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { MDBContainer, MDBBox } from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 
-import "./Header.css";
+import "./Presentation.css";
 
-class Header extends React.Component {
+class Presentation extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            collapse: false,
             titrePresentation: "Une petite presentation s'impose.",
             restePresentation: " Salut, je m'appelle kevin et je suis en formation pour devenir developpeur web et mobile.\
             Je suis curieux et passioner par la programation.",
         };
-        this.onClick = this.onClick.bind(this);
+
     }
   
     componentDidMount(){
@@ -80,49 +77,32 @@ class Header extends React.Component {
         
     }
 
-    onClick() {
-      this.setState({
-          collapse: !this.state.collapse,
-        });
-    }
-
   render() {
     
     return(
         <div id='main'>
-        <header>
-            {/* NavBar */}
-          <Router>
-            <MDBNavbar className="paddingNav z-depth-3" fixed="top" dark expand="md" scrolling transparent>
-              {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
-              <MDBCollapse isOpen={this.state.collapse} navbar>
-                <MDBNavbarNav right>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">Home</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">Link</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">Profile</MDBNavLink>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-              </MDBCollapse>
-            </MDBNavbar>
-          </Router>
-
-        {/* Image */}
-        <MDBView id='anim' src="https://cdn.pixabay.com/photo/2015/01/08/18/25/startup-593327_960_720.jpg" className='imgFixed'>
-                <MDBMask overlay='black-light' className="flex-center flex-column text-white text-center">
-                <MDBBox tag='h4' className='title'> Developpeur web et mobile </MDBBox>
-                <MDBBox tag='h6' className='subtitle'> Faire du copier-coller son metier </MDBBox>
-            </MDBMask>
-          </MDBView>
-         
-        </header>
+                                    {/* type effect */}
+            <MDBContainer fluid className="text-center d-block description" display="block">
+                <MDBBox display="block" justifyContent="center" onMouseOver={()=>{
+                    if (!this.state.testPresentation) {
+                    this.typeEfect();
+                }}}>
+                <MDBBox display='flex' tag='h2' justifyContent="center" id='titrePresentation'>
+                    {this.state.titrePresentation}
+                </MDBBox>
+                <MDBBox display='flex' tag='h5' justifyContent="center" id='textePresentation'> 
+                   {this.state.restePresentation}
+                </MDBBox>
+                </MDBBox>
+                <MDBBox display='block' tag='a' justifyContent="center" id='restartTypeEffect' onClick={()=>{
+                    this.restartEffect();
+                }}>
+                   Restart effect
+                </MDBBox>
+            </MDBContainer>
       </div>
     )
   }
 }
 
-export default Header;
+export default Presentation;
