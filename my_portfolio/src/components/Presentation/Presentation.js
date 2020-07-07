@@ -18,22 +18,21 @@ class Presentation extends React.Component {
 
     }
   
-    componentDidMount(){
-        // animation du Background title/subtitle
-        var mouseX, mouseY;
-        var ww = $( window ).width();
-        var wh = $( window ).height();
-        var traX, traY;
-        $('#anim').mousemove(function(e){
-          mouseX = e.pageX;
-          mouseY = e.pageY;
-          traX = ((4 * mouseX) / 570) + 40;
-          traY = ((4 * mouseY) / 570) + 50;
-        //   console.log(traX);
-          $(".title").css({"background-position": traX + "%" + traY + "%"});
-          $(".subtitle").css({"background-position": traX + "%" + traY + "%"});
-        });
-
+    componentDidMount() {
+        window.addEventListener('scroll', this.listenToScroll)
+    }
+      
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.listenToScroll)
+    }
+      
+    listenToScroll = () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop
+            // console.log(winScroll);
+        
+        this.setState({
+            scroll: winScroll
+        })
     }
        
 
@@ -74,19 +73,22 @@ class Presentation extends React.Component {
     restartEffect() {
         this.setState({ testPresentation: false })
         console.log(this.state.testPresentation);
-        
     }
 
   render() {
-    
+      
+      if (this.state.scroll > 135 && !this.state.testPresentation) {
+          this.typeEfect();
+      }
+      if (this.state.scroll < 100 && this.state.testPresentation) {
+        this.setState({ testPresentation: false })
+    }
+      
     return(
-        <div id='main'>
+        <div>
                                     {/* type effect */}
             <MDBContainer fluid className="text-center d-block description" display="block">
-                <MDBBox display="block" justifyContent="center" onMouseOver={()=>{
-                    if (!this.state.testPresentation) {
-                    this.typeEfect();
-                }}}>
+                <MDBBox display="block" justifyContent="center">
                 <MDBBox display='flex' tag='h2' justifyContent="center" id='titrePresentation'>
                     {this.state.titrePresentation}
                 </MDBBox>

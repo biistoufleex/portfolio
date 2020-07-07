@@ -14,9 +14,6 @@ class Header extends React.Component {
         super(props);
         this.state = {
             collapse: false,
-            titrePresentation: "Une petite presentation s'impose.",
-            restePresentation: " Salut, je m'appelle kevin et je suis en formation pour devenir developpeur web et mobile.\
-            Je suis curieux et passioner par la programation.",
         };
         this.onClick = this.onClick.bind(this);
     }
@@ -24,8 +21,6 @@ class Header extends React.Component {
     componentDidMount(){
         // animation du Background title/subtitle
         var mouseX, mouseY;
-        var ww = $( window ).width();
-        var wh = $( window ).height();
         var traX, traY;
         $('#anim').mousemove(function(e){
           mouseX = e.pageX;
@@ -38,47 +33,6 @@ class Header extends React.Component {
         });
 
     }
-       
-
-    // effet de frappe au clavier pour presentation
-    typeEfect(){
-        this.setState({ testPresentation: true })
-        var textTitre = this.state.titrePresentation;
-        var textDesc = this.state.restePresentation;
-
-        this.setState( { titrePresentation: '' } )
-        this.setState( { restePresentation: '' } )
-        
-        var i = 0;
-        var j = 0;
-        var recupTexte = '';
-        var recupTexte2 = '';
-        var self = this;
-        var timer = setInterval(function() {
-            if (i < textTitre.length) {
-                recupTexte += textTitre.charAt(i);
-                self.setState({ titrePresentation: recupTexte })
-                i++;
-              } else {
-                var timer2 = setInterval(function() {
-                    if (j < textDesc.length) {
-                        recupTexte2 += textDesc.charAt(j);
-                        self.setState({ restePresentation: recupTexte2 })
-                        j++;
-                      } else {
-                          clearInterval(timer2);
-                      }
-                  }, 60);
-                  clearInterval(timer);
-              }
-          }, 75);
-    }
-
-    restartEffect() {
-        this.setState({ testPresentation: false })
-        console.log(this.state.testPresentation);
-        
-    }
 
     onClick() {
       this.setState({
@@ -89,7 +43,7 @@ class Header extends React.Component {
   render() {
     
     return(
-        <div id='main'>
+        <div >
         <header>
             {/* NavBar */}
           <Router>
