@@ -52,7 +52,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100"
-                              src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+                              src="/media/ecommerce/image1.png"
                               alt="First slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -69,7 +69,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100"
-                              src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+                              src="/media/ecommerce/image2.png"
                               alt="Second slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -86,7 +86,41 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100"
-                              src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+                              src="/media/ecommerce/image3.png"
+                              alt="Third slide"
+                            />
+                            <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
+                              <MDBBox tag='h4' className='white-text vertical-center'>
+                                Project de un mois realiser en equipe de 7.
+                              </MDBBox>
+                              <MDBBox tag='h4' className='white-text vertical-center'>
+                                Developer en React - Laravel - SQL 
+                              </MDBBox>
+                            </MDBMask>
+                          </MDBView>
+                        </MDBCarouselItem>
+                        <MDBCarouselItem itemId="3">
+                          <MDBView hover zoom>
+                            <img
+                              className="d-block w-100"
+                              src="/media/ecommerce/image4.png"
+                              alt="Third slide"
+                            />
+                            <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
+                              <MDBBox tag='h4' className='white-text vertical-center'>
+                                Project de un mois realiser en equipe de 7.
+                              </MDBBox>
+                              <MDBBox tag='h4' className='white-text vertical-center'>
+                                Developer en React - Laravel - SQL 
+                              </MDBBox>
+                            </MDBMask>
+                          </MDBView>
+                        </MDBCarouselItem>
+                        <MDBCarouselItem itemId="3">
+                          <MDBView hover zoom>
+                            <img
+                              className="d-block w-100"
+                              src="/media/ecommerce/image5.png"
                               alt="Third slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -104,79 +138,9 @@ class Project extends React.Component {
                 </MDBAnimation>
               </MDBCol>
 
-            {/* Caroussel My Snapchat*/}
+              {/* Caroussel Tweet academie*/}
               <MDBCol lg='5' className='articles-pad'>
                 <MDBAnimation reveal type="fadeInRight">
-                <MDBBox tag='h4' className='titre-project' >My Snapchat</MDBBox>
-                    <MDBCarousel
-                      activeItem={1}
-                      length={3}
-                      showControls={false}
-                      showIndicators={false}
-                      className="z-depth-1"
-                    >
-                      <MDBCarouselInner>
-                        <MDBCarouselItem itemId="1">
-                          <MDBView hover zoom>
-                            <img
-                              className="d-block w-100"
-                              src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
-                              alt="First slide"
-                            />
-                            <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
-                              <MDBBox tag='h4' className='white-text vertical-center'>
-                                Project mobile de 5 jour individuelle
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
-                                Developer en React-Natif avec une API fourni
-                              </MDBBox>
-                            </MDBMask>
-                          </MDBView>
-                        </MDBCarouselItem>
-                        <MDBCarouselItem itemId="2">
-                          <MDBView hover zoom>
-                            <img
-                              className="d-block w-100"
-                              src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
-                              alt="Second slide"
-                            />
-                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
-                              <MDBBox tag='h4' className='white-text vertical-center'>
-                                Project mobile de 5 jour individuelle
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
-                                Developer en React-Natif avec une API fourni
-                              </MDBBox>
-                            </MDBMask>
-                          </MDBView>
-                        </MDBCarouselItem>
-                        <MDBCarouselItem itemId="3">
-                          <MDBView hover zoom>
-                            <img
-                              className="d-block w-100"
-                              src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
-                              alt="Third slide"
-                            />
-                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
-                              <MDBBox tag='h4' className='white-text vertical-center'>
-                                Project mobile de 5 jour individuelle
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
-                                Developer en React-Natif avec une API fourni
-                              </MDBBox>
-                            </MDBMask>
-                          </MDBView>
-                        </MDBCarouselItem>
-                      </MDBCarouselInner>
-                    </MDBCarousel>
-                </MDBAnimation>
-              </MDBCol>
-            </MDBRow> 
-
-            <MDBRow center>
-            {/* Caroussel Tweet academie*/}
-            <MDBCol lg='5' className='articles-pad'>
-                <MDBAnimation reveal type="fadeInLeft">
                 <MDBBox tag='h4' className='titre-project'>Tweet academie</MDBBox>
                     <MDBCarousel
                       activeItem={1}
@@ -190,7 +154,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100"
-                              src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+                              src="/media/tweeter/image1.png"
                               alt="First slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -207,7 +171,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100"
-                              src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+                              src="/media/tweeter/image2.png"
                               alt="Second slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -224,7 +188,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100"
-                              src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+                              src="/media/tweeter/image3.png"
                               alt="Third slide"
                             />
                            <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -233,6 +197,75 @@ class Project extends React.Component {
                               </MDBBox>
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer en PHP
+                              </MDBBox>
+                            </MDBMask>
+                          </MDBView>
+                        </MDBCarouselItem>
+                      </MDBCarouselInner>
+                    </MDBCarousel>
+                </MDBAnimation>
+              </MDBCol>
+            </MDBRow> 
+
+            <MDBRow center>
+            <MDBCol lg='5' className='articles-pad'>
+                <MDBAnimation reveal type="fadeInLeft">
+                <MDBBox tag='h4' className='titre-project'>Puissance 4</MDBBox>
+                    <MDBCarousel
+                      activeItem={1}
+                      length={3}
+                      showControls={false}
+                      showIndicators={false}
+                      className="z-depth-1"
+                    >
+                      <MDBCarouselInner>
+                        <MDBCarouselItem itemId="1">
+                          <MDBView hover zoom>
+                            <img
+                              className="d-block w-100"
+                              src="/media/puissance4/image1.png"
+                              alt="First slide"
+                            />
+                            <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
+                              <MDBBox tag='h4' className='white-text vertical-center'>
+                                Project individuelle realise en quelque jours
+                              </MDBBox>
+                              <MDBBox tag='h4' className='white-text vertical-center'>
+                                Developer JQuery
+                              </MDBBox>
+                            </MDBMask>
+                          </MDBView>
+                        </MDBCarouselItem>
+                        <MDBCarouselItem itemId="2">
+                          <MDBView hover zoom>
+                            <img
+                              className="d-block w-100"
+                              src="/media/puissance4/image2.png"
+                              alt="Second slide"
+                            />
+                            <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
+                              <MDBBox tag='h4' className='white-text vertical-center'>
+                                Project individuelle realise en quelque jours
+                              </MDBBox>
+                              <MDBBox tag='h4' className='white-text vertical-center'>
+                                Developer JQuery
+                              </MDBBox>
+                            </MDBMask>
+                          </MDBView>
+                        </MDBCarouselItem>
+                        <MDBCarouselItem itemId="3">
+                          <MDBView hover zoom>
+                            <img
+                              className="d-block w-100"
+                              src="/media/puissance4/image3.png"
+                              alt="Third slide"
+                            />
+                            <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
+                              <MDBBox tag='h4' className='white-text vertical-center'>
+                                Project individuelle realise en quelque jours
+                              </MDBBox>
+                              <MDBBox tag='h4' className='white-text vertical-center'>
+                                Developer JQuery
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -258,7 +291,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100"
-                              src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+                              src="/media/irc/image1.png"
                               alt="First slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -275,7 +308,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100"
-                              src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+                              src="/media/irc/image2.png"
                               alt="Second slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -292,7 +325,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100"
-                              src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+                              src="/media/irc/image3.png"
                               alt="Third slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -310,7 +343,6 @@ class Project extends React.Component {
                 </MDBAnimation>
               </MDBCol>
             </MDBRow>
-
           </MDBContainer>
       </div>
     )
