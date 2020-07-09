@@ -1,5 +1,4 @@
 .project {
-    /* padding: 4rem; */
     height: auto;
     background-color: #232323;
     color: #be1739;
@@ -15,6 +14,10 @@
     margin: 1.5em;
 }
 
+.titre-project{
+    font-weight: 500;
+}
+
 .vertical-center{
     font-family: 'Oxygen Mono', monospace;
     font-size: 1.5em;
@@ -28,8 +31,4 @@
     .no-padd{
         padding: 1rem !important;
     }
-}
-
-.titre-project{
-    font-weight: 500;
 }

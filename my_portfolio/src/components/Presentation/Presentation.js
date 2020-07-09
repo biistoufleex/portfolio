@@ -14,6 +14,8 @@ class Presentation extends React.Component {
             titrePresentation: "Une petite presentation s'impose.",
             restePresentation: " Salut, je m'appelle kevin et je suis en formation pour devenir developpeur web et mobile.\
             Je suis curieux et passioner par la programation.",
+            TypeEffetEnd: true,
+            startEffect: 450
         };
 
     }
@@ -38,7 +40,7 @@ class Presentation extends React.Component {
 
     // effet de frappe au clavier pour presentation
     typeEfect(){
-        this.setState({ testPresentation: true })
+        this.setState({ testPresentation: true, TypeEffetEnd: false })
         var textTitre = this.state.titrePresentation;
         var textDesc = this.state.restePresentation;
 
@@ -62,6 +64,7 @@ class Presentation extends React.Component {
                         self.setState({ restePresentation: recupTexte2 })
                         j++;
                       } else {
+                          self.setState({ TypeEffetEnd: true })
                           clearInterval(timer2);
                       }
                   }, 60);
@@ -72,35 +75,42 @@ class Presentation extends React.Component {
 
     restartEffect() {
         this.setState({ testPresentation: false })
-        console.log(this.state.testPresentation);
+        // console.log(this.state.testPresentation);
     }
 
   render() {
       
-      if (this.state.scroll > 135 && !this.state.testPresentation) {
-          this.typeEfect();
-      }
-      if (this.state.scroll < 100 && this.state.testPresentation) {
-        this.setState({ testPresentation: false })
+    if (this.state.scroll > this.state.startEffect && !this.state.testPresentation && this.state.TypeEffetEnd == true) {
+        this.typeEfect();
     }
+    // if (this.state.scroll < 100 && this.state.testPresentation && this.state.testPresentation) {  
+    //     this.setState({ testPresentation: false })
+    // }
       
     return(
         <div>
                                     {/* type effect */}
             <MDBContainer fluid className="text-center d-block description" display="block">
+                <MDBBox>
+                    <img
+                    src="/media/profil-image.png"
+                    className="img-fluid rounded-circle profilPic"
+                    alt=""
+                    />
+                </MDBBox>
                 <MDBBox display="block" justifyContent="center">
-                <MDBBox display='flex' tag='h2' justifyContent="center" id='titrePresentation'>
+                <MDBBox display='flex' tag='h3' justifyContent="center" id='titrePresentation'>
                     {this.state.titrePresentation}
                 </MDBBox>
                 <MDBBox display='flex' tag='h5' justifyContent="center" id='textePresentation'> 
                    {this.state.restePresentation}
                 </MDBBox>
                 </MDBBox>
-                <MDBBox display='block' tag='a' justifyContent="center" id='restartTypeEffect' onClick={()=>{
+                {/* <MDBBox display='block' tag='a' justifyContent="center" id='restartTypeEffect' onClick={()=>{
                     this.restartEffect();
                 }}>
                    Restart effect
-                </MDBBox>
+                </MDBBox> */}
             </MDBContainer>
       </div>
     )

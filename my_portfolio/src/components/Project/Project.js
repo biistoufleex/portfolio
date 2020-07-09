@@ -26,7 +26,7 @@ class Project extends React.Component {
     return(
       <div>
             {/* Liste de project */}
-          <MDBContainer fluid className="text-center d-block" className='project no-padd p-3 p-sm-0'>
+          <MDBContainer fluid className="text-center d-block project no-padd p-3 p-sm-0">
             <MDBRow center>
               <MDBCol size='6'>
                 <MDBBox tag='h2' className='titre d-flex justify-content-center '>
@@ -42,16 +42,16 @@ class Project extends React.Component {
                 <MDBBox tag='h4' className='titre-project'>E Commerce</MDBBox>
                     <MDBCarousel
                       activeItem={1}
-                      length={3}
+                      length={5}
                       showControls={false}
-                      showIndicators={false}
+                      showIndicators={true}
                       className="z-depth-1"
                     >
                       <MDBCarouselInner>
                         <MDBCarouselItem itemId="1">
                           <MDBView hover zoom>
                             <img
-                              className="d-block w-100"
+                              className="d-block w-100 rounded"
                               src="/media/ecommerce/image1.png"
                               alt="First slide"
                             />
@@ -68,7 +68,7 @@ class Project extends React.Component {
                         <MDBCarouselItem itemId="2">
                           <MDBView hover zoom>
                             <img
-                              className="d-block w-100"
+                              className="d-block w-100 rounded"
                               src="/media/ecommerce/image2.png"
                               alt="Second slide"
                             />
@@ -85,7 +85,7 @@ class Project extends React.Component {
                         <MDBCarouselItem itemId="3">
                           <MDBView hover zoom>
                             <img
-                              className="d-block w-100"
+                              className="d-block w-100 rounded"
                               src="/media/ecommerce/image3.png"
                               alt="Third slide"
                             />
@@ -99,12 +99,12 @@ class Project extends React.Component {
                             </MDBMask>
                           </MDBView>
                         </MDBCarouselItem>
-                        <MDBCarouselItem itemId="3">
+                        <MDBCarouselItem itemId="4">
                           <MDBView hover zoom>
                             <img
-                              className="d-block w-100"
+                              className="d-block w-100 rounded"
                               src="/media/ecommerce/image4.png"
-                              alt="Third slide"
+                              alt="Four slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
@@ -116,12 +116,12 @@ class Project extends React.Component {
                             </MDBMask>
                           </MDBView>
                         </MDBCarouselItem>
-                        <MDBCarouselItem itemId="3">
+                        <MDBCarouselItem itemId="5">
                           <MDBView hover zoom>
                             <img
-                              className="d-block w-100"
+                              className="d-block w-100 rounded"
                               src="/media/ecommerce/image5.png"
-                              alt="Third slide"
+                              alt="Five slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
@@ -146,14 +146,14 @@ class Project extends React.Component {
                       activeItem={1}
                       length={3}
                       showControls={false}
-                      showIndicators={false}
+                      showIndicators={true}
                       className="z-depth-1"
                     >
                       <MDBCarouselInner>
                         <MDBCarouselItem itemId="1">
                           <MDBView hover zoom>
                             <img
-                              className="d-block w-100"
+                              className="d-block w-100 rounded"
                               src="/media/tweeter/image1.png"
                               alt="First slide"
                             />
@@ -170,7 +170,7 @@ class Project extends React.Component {
                         <MDBCarouselItem itemId="2">
                           <MDBView hover zoom>
                             <img
-                              className="d-block w-100"
+                              className="d-block w-100 rounded"
                               src="/media/tweeter/image2.png"
                               alt="Second slide"
                             />
@@ -187,7 +187,7 @@ class Project extends React.Component {
                         <MDBCarouselItem itemId="3">
                           <MDBView hover zoom>
                             <img
-                              className="d-block w-100"
+                              className="d-block w-100 rounded"
                               src="/media/tweeter/image3.png"
                               alt="Third slide"
                             />
@@ -215,14 +215,14 @@ class Project extends React.Component {
                       activeItem={1}
                       length={3}
                       showControls={false}
-                      showIndicators={false}
+                      showIndicators={true}
                       className="z-depth-1"
                     >
                       <MDBCarouselInner>
                         <MDBCarouselItem itemId="1">
                           <MDBView hover zoom>
                             <img
-                              className="d-block w-100"
+                              className="d-block w-100 rounded"
                               src="/media/puissance4/image1.png"
                               alt="First slide"
                             />
@@ -239,7 +239,7 @@ class Project extends React.Component {
                         <MDBCarouselItem itemId="2">
                           <MDBView hover zoom>
                             <img
-                              className="d-block w-100"
+                              className="d-block w-100 rounded"
                               src="/media/puissance4/image2.png"
                               alt="Second slide"
                             />
@@ -256,7 +256,7 @@ class Project extends React.Component {
                         <MDBCarouselItem itemId="3">
                           <MDBView hover zoom>
                             <img
-                              className="d-block w-100"
+                              className="d-block w-100 rounded"
                               src="/media/puissance4/image3.png"
                               alt="Third slide"
                             />
@@ -283,14 +283,14 @@ class Project extends React.Component {
                       activeItem={1}
                       length={3}
                       showControls={false}
-                      showIndicators={false}
+                      showIndicators={true}
                       className="z-depth-1"
                     >
                       <MDBCarouselInner>
                         <MDBCarouselItem itemId="1">
                           <MDBView hover zoom>
                             <img
-                              className="d-block w-100"
+                              className="d-block w-100 rounded"
                               src="/media/irc/image1.png"
                               alt="First slide"
                             />
@@ -307,7 +307,7 @@ class Project extends React.Component {
                         <MDBCarouselItem itemId="2">
                           <MDBView hover zoom>
                             <img
-                              className="d-block w-100"
+                              className="d-block w-100 rounded"
                               src="/media/irc/image2.png"
                               alt="Second slide"
                             />
@@ -324,7 +324,7 @@ class Project extends React.Component {
                         <MDBCarouselItem itemId="3">
                           <MDBView hover zoom>
                             <img
-                              className="d-block w-100"
+                              className="d-block w-100 rounded"
                               src="/media/irc/image3.png"
                               alt="Third slide"
                             />

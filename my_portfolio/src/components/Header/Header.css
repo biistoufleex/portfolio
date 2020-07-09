@@ -69,24 +69,3 @@ p {
     display: table-cell;
     vertical-align: middle;
 }
-
-/* DESCRIPTION */
-.description {
-    font-family: 'Oxygen Mono', monospace;
-    background-color: #e5e5e5;
-    height: auto;
-    padding: 4rem;
-}
-
-#textePresentation{
-    padding-left: 6rem;
-    padding-right: 6rem;
-}
-
-#restartTypeEffect{
-    position: -webkit-sticky;
-    position: sticky;
-    margin-left: 90%;
-    margin-top: 2rem;
-    font-size: 10pt;
-}
