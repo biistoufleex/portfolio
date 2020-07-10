@@ -1,6 +1,15 @@
 /* NAVBAR */
 .paddingNav{
-    padding: 10px 45% !important;
+    padding: 10px 40% !important;
+}
+
+.regroup{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.linkHover:hover {
+    background-color: #be1739;
 }
 
 .nav-link{
@@ -9,6 +18,7 @@
     font-size: large;
     font-weight: bold;
 }
+
 /* BACKGROUND DU TITRE QUI BOUGE */
 .imgFixed {
     background-attachment: fixed;
@@ -68,4 +78,19 @@ p {
 #centeralign {
     display: table-cell;
     vertical-align: middle;
+}
+
+.arrow{
+    position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: #be1739;
+  z-index: 999999;
+}
+
+.arrow:hover {
+    position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: #d3536d;
 }

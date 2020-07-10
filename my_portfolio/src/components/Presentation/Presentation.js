@@ -1,6 +1,6 @@
 import React from "react";
 import $ from 'jquery';
-import { MDBContainer, MDBBox } from 'mdbreact';
+import { MDBContainer, MDBBox, MDBAnimation } from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
@@ -12,8 +12,8 @@ class Presentation extends React.Component {
         super(props);
         this.state = {
             titrePresentation: "Une petite presentation s'impose.",
-            restePresentation: " Salut, je m'appelle kevin et je suis en formation pour devenir developpeur web et mobile.\
-            Je suis curieux et passioner par la programation.",
+            restePresentation: " Bienvenue, je m'appelle Kevin et suis en formation pour devenir developpeur web et mobile.\
+            Je suis curieux et passione par la programmation.",
             TypeEffetEnd: true,
             startEffect: 450
         };
@@ -30,7 +30,6 @@ class Presentation extends React.Component {
       
     listenToScroll = () => {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop
-            // console.log(winScroll);
         
         this.setState({
             scroll: winScroll
@@ -75,7 +74,6 @@ class Presentation extends React.Component {
 
     restartEffect() {
         this.setState({ testPresentation: false })
-        // console.log(this.state.testPresentation);
     }
 
   render() {
@@ -91,15 +89,17 @@ class Presentation extends React.Component {
         <div>
                                     {/* type effect */}
             <MDBContainer fluid className="text-center d-block description" display="block">
-                <MDBBox>
-                    <img
-                    src="/media/profil-image.png"
-                    className="img-fluid rounded-circle profilPic"
-                    alt=""
-                    />
-                </MDBBox>
+                <MDBAnimation reveal type='zoomIn' duration='2s'>
+                    <MDBBox>
+                        <img
+                        src="/media/profil-image.png"
+                        className="img-fluid rounded-circle profilPic"
+                        alt=""
+                        />
+                    </MDBBox>
+                </MDBAnimation>
                 <MDBBox display="block" justifyContent="center">
-                <MDBBox display='flex' tag='h3' justifyContent="center" id='titrePresentation'>
+                <MDBBox display='flex' tag='h3' justifyContent="center">
                     {this.state.titrePresentation}
                 </MDBBox>
                 <MDBBox display='flex' tag='h5' justifyContent="center" id='textePresentation'> 

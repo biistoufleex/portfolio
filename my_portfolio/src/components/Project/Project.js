@@ -30,7 +30,7 @@ class Project extends React.Component {
             <MDBRow center>
               <MDBCol size='6'>
                 <MDBBox tag='h2' className='titre d-flex justify-content-center '>
-                  Mes projects
+                  Mes projets
                 </MDBBox>
               </MDBCol>
             </MDBRow>
@@ -299,7 +299,7 @@ class Project extends React.Component {
                                 Project de une semaine realise en duo.
                               </MDBBox>
                               <MDBBox tag='h4' className='white-text vertical-center'>
-                                Developer en NodeJS React socket.io
+                                Developer avec NodeJS React socket.io et express
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -316,7 +316,7 @@ class Project extends React.Component {
                                 Project de une semaine realise en duo.
                               </MDBBox>
                               <MDBBox tag='h4' className='white-text vertical-center'>
-                                Developer en NodeJS React socket.io
+                                Developer avec NodeJS React socket.io et express
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -333,7 +333,7 @@ class Project extends React.Component {
                                 Project de une semaine realise en duo.
                               </MDBBox>
                               <MDBBox tag='h4' className='white-text vertical-center'>
-                                Developer en NodeJS React socket.io
+                                Developer avec NodeJS React socket.io et express
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
