@@ -1,6 +1,5 @@
-import React, { useRef } from "react";
-import $ from 'jquery';
-import { MDBBox, MDBContainer, MDBRow, MDBCol, MDBAnimation } from 'mdbreact';
+import React from "react";
+import { MDBBox, MDBContainer, MDBRow, MDBCol, MDBAnimation, MDBIcon } from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
@@ -44,12 +43,14 @@ class Competences extends React.Component {
                 <MDBCol lg='3' className='cadre-techno p-2 bg-php rounded'>
                     <MDBAnimation reveal type="fadeInLeft">
                     <MDBBox tag='h4' className='mt-2 mb-4'>
-                        <img fluid src='/media/icones/php.png' className='icones' />
+                        <img fluid src='/media/icones/php.png' className='icones' alt='PHP icone' />
                     </MDBBox>
                     <MDBBox tag='h5' className='language'>
+                        <img src='/media/icones/laravel.png' className='littleIcones' />
                         Laravel
                     </MDBBox>
                     <MDBBox tag='h5' className='language'>
+                        <img src='/media/icones/symfony.png' className='littleIcones' />
                         Symfony
                     </MDBBox>
                     </MDBAnimation>
@@ -58,18 +59,21 @@ class Competences extends React.Component {
                 <MDBCol lg='3' className='cadre-techno p-2 bg-js rounded'>
                     <MDBAnimation reveal type="fadeInUp">
                         <MDBBox tag='h4' className='mt-2 mb-4'>
-                            <img fluid src='/media/icones/js.png' className='icones' />
+                            <img fluid src='/media/icones/js.png' className='icones' alt='JS icone' />
                         </MDBBox>
                         <MDBBox tag='h5' className='language'>
+                            <img src='/media/icones/jquery.png' className='littleIcones' />
                             JQuery
                         </MDBBox>
                         <MDBBox tag='h5' className='language'>
+                            <img src='/media/icones/react.png' className='littleIcones' />
                             React / React native
                         </MDBBox>
                         <MDBBox tag='h5' className='language'>
-                            Express.js
+                        <MDBIcon icon="cogs" /> Express.js
                         </MDBBox>
                         <MDBBox tag='h5' className='language'>
+                            <img src='/media/icones/socketio.png' className='littleIcones' />
                             Socket.io
                         </MDBBox>
                     </MDBAnimation>
@@ -78,12 +82,14 @@ class Competences extends React.Component {
                 <MDBCol lg='3' className='cadre-techno p-2 bg-bdd rounded'>
                     <MDBAnimation reveal type="fadeInRight">
                         <MDBBox tag='h4' className='mt-2 mb-4'>
-                            <img fluid src='/media/icones/bdd.png' className='icones' />
+                            <img fluid src='/media/icones/bdd.png' className='icones' alt='BDD icone' />
                         </MDBBox>
                         <MDBBox tag='h5' className='language'>
+                            <img src='/media/icones/sql.png' className='littleIcones' />
                             SQL
                         </MDBBox>
                         <MDBBox tag='h5' className='language'>
+                            <img src='/media/icones/mongo.png' className='littleIcones' />
                             MongoDB
                         </MDBBox>
                     </MDBAnimation>

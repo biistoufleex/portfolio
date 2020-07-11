@@ -1,5 +1,4 @@
 import React from 'react';
-import $ from 'jquery';
 
 // Styles 
 import './App.css';
@@ -9,6 +8,7 @@ import Header from './components/Header/Header';
 import Presentation from './components/Presentation/Presentation';
 import Project from './components/Project/Project';
 import Competences from './components/Competences/Competences';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Presentation />
         <Project />
         <Competences />
+        <Contact />
     </div>
   );
 }

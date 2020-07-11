@@ -39,7 +39,7 @@
 
 .subtitle{
     font-weight: 400;
-    color: #be1739;
+    color: #c91a3d;
     font-size:50px;
     background-position: 40% 50%;
     -webkit-background-clip: text;
@@ -84,7 +84,7 @@ p {
     position: fixed;
   bottom: 50px;
   right: 50px;
-  color: #be1739;
+  color: #FE214E;
   z-index: 999999;
 }
 
@@ -92,5 +92,5 @@ p {
     position: fixed;
   bottom: 50px;
   right: 50px;
-  color: #d3536d;
+  color: #cc183c;
 }

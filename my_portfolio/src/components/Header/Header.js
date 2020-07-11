@@ -1,7 +1,7 @@
 import React from "react";
 import $ from 'jquery';
-import { MDBNavbar, MDBNavbarNav, MDBNavbarToggler, MDBAnimation,
-MDBCollapse, MDBNavItem, MDBNavLink, MDBView, MDBMask, MDBBox, MDBIcon } from 'mdbreact';
+import { MDBNavbar, MDBNavbarNav, MDBNavbarToggler, MDBCollapse,
+  MDBNavItem, MDBNavLink, MDBView, MDBMask, MDBBox, MDBIcon } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
@@ -20,6 +20,7 @@ class Header extends React.Component {
         this.scrollToProject = this.scrollToProject.bind(this);
         this.scrollToCompetence = this.scrollToCompetence.bind(this);
         this.scrollToMain = this.scrollToMain.bind(this);
+        this.scrollToContact = this.scrollToContact.bind(this);
     }
   
     componentDidMount(){
@@ -61,6 +62,15 @@ class Header extends React.Component {
       }, 1600);
     }
 
+    scrollToContact(){
+      $('html, body').animate({
+        scrollTop: $('#header').height() + 
+        $("#header").next().height() + 
+        $("#header").next().next().height() + 
+        $("#header").next().next().next().height()
+      }, 1600);
+    }
+
     scrollToMain(){
       $('html, body').animate({
         scrollTop: 0
@@ -86,6 +96,9 @@ class Header extends React.Component {
                   </MDBNavItem>
                   <MDBNavItem>
                     <MDBNavLink className='linkHover' onClick={this.scrollToCompetence} to="#">Competences</MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink className='linkHover' onClick={this.scrollToContact} to="#">Contact</MDBNavLink>
                   </MDBNavItem>
                 </MDBNavbarNav>
               </MDBCollapse>

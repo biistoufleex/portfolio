@@ -1,0 +1,11 @@
+.myCV{
+    width: 6rem;
+}
+
+a{
+    color: #FE214E;
+}
+
+a:hover{
+    color: seashell;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import $ from 'jquery';
+
 import { MDBContainer, MDBBox, MDBRow, MDBCol, MDBAnimation,
 MDBView, MDBMask, MDBCarousel, MDBCarouselInner, MDBCarouselItem } from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';

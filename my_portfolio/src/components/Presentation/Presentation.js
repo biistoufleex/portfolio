@@ -1,5 +1,4 @@
 import React from "react";
-import $ from 'jquery';
 import { MDBContainer, MDBBox, MDBAnimation } from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
@@ -78,7 +77,7 @@ class Presentation extends React.Component {
 
   render() {
       
-    if (this.state.scroll > this.state.startEffect && !this.state.testPresentation && this.state.TypeEffetEnd == true) {
+    if (this.state.scroll > this.state.startEffect && !this.state.testPresentation && this.state.TypeEffetEnd === true) {
         this.typeEfect();
     }
     // if (this.state.scroll < 100 && this.state.testPresentation && this.state.testPresentation) {  
