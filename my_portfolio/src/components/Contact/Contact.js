@@ -37,6 +37,7 @@ class Contact extends React.Component {
               <MDBCol lg='3'>
               <MDBBox tag='h2' className='titre-project m-5'>Mes Reseaux</MDBBox>
               <MDBBox tag='h5' className='titre-project mb-3'>
+              <img src='/media/icones/jquery.png' className='littleIcones' alt='jquery iconne' />
                 <a className='mesLink' href='https://www.linkedin.com/in/kevin-aubel-2095231a8/' target='blank'>Linkedin</a>
               </MDBBox>
               <MDBBox tag='h5' className='titre-project mb-3'>
