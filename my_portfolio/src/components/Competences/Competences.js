@@ -46,11 +46,11 @@ class Competences extends React.Component {
                         <img fluid src='/media/icones/php.png' className='icones' alt='PHP icone' />
                     </MDBBox>
                     <MDBBox tag='h5' className='language'>
-                        <img src='/media/icones/laravel.png' className='littleIcones' />
+                        <img src='/media/icones/laravel.png' className='littleIcones' alt='laravel iconne'/>
                         Laravel
                     </MDBBox>
                     <MDBBox tag='h5' className='language'>
-                        <img src='/media/icones/symfony.png' className='littleIcones' />
+                        <img src='/media/icones/symfony.png' className='littleIcones' alt='symfony iconne' />
                         Symfony
                     </MDBBox>
                     </MDBAnimation>
@@ -62,18 +62,18 @@ class Competences extends React.Component {
                             <img fluid src='/media/icones/js.png' className='icones' alt='JS icone' />
                         </MDBBox>
                         <MDBBox tag='h5' className='language'>
-                            <img src='/media/icones/jquery.png' className='littleIcones' />
+                            <img src='/media/icones/jquery.png' className='littleIcones' alt='jquery iconne' />
                             JQuery
                         </MDBBox>
                         <MDBBox tag='h5' className='language'>
-                            <img src='/media/icones/react.png' className='littleIcones' />
+                            <img src='/media/icones/react.png' className='littleIcones' alt='react iconne' />
                             React / React native
                         </MDBBox>
                         <MDBBox tag='h5' className='language'>
                         <MDBIcon icon="cogs" /> Express.js
                         </MDBBox>
                         <MDBBox tag='h5' className='language'>
-                            <img src='/media/icones/socketio.png' className='littleIcones' />
+                            <img src='/media/icones/socketio.png' className='littleIcones' alt='socket.io iconne'/>
                             Socket.io
                         </MDBBox>
                     </MDBAnimation>
@@ -85,11 +85,11 @@ class Competences extends React.Component {
                             <img fluid src='/media/icones/bdd.png' className='icones' alt='BDD icone' />
                         </MDBBox>
                         <MDBBox tag='h5' className='language'>
-                            <img src='/media/icones/sql.png' className='littleIcones' />
+                            <img src='/media/icones/sql.png' className='littleIcones' alt='SQL iconne' />
                             SQL
                         </MDBBox>
                         <MDBBox tag='h5' className='language'>
-                            <img src='/media/icones/mongo.png' className='littleIcones' />
+                            <img src='/media/icones/mongo.png' className='littleIcones' alt='mongoDB iconne'/>
                             MongoDB
                         </MDBBox>
                     </MDBAnimation>

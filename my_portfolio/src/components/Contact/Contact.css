@@ -1,11 +1,19 @@
 .myCV{
-    width: 6rem;
+    width: 8rem;
 }
 
 a{
-    color: #FE214E;
+    color: seashell;
 }
 
 a:hover{
+    color: #FE214E;
+}
+
+.reseaux{
     color: seashell;
+}
+
+.reseaux:hover{
+    color: #FE214E;
 }

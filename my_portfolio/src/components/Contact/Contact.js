@@ -34,7 +34,7 @@ class Contact extends React.Component {
               
             <MDBRow center> 
               {/* Mes reseaux */}
-              <MDBCol lg='3' className=''>
+              <MDBCol lg='3'>
               <MDBBox tag='h2' className='titre-project m-5'>Mes Reseaux</MDBBox>
               <MDBBox tag='h5' className='titre-project mb-3'>
                 <a className='mesLink' href='https://www.linkedin.com/in/kevin-aubel-2095231a8/' target='blank'>Linkedin</a>
@@ -42,17 +42,17 @@ class Contact extends React.Component {
               <MDBBox tag='h5' className='titre-project mb-3'>
                 <a href='https://github.com/biistoufleex' target='blank'>Github</a>
               </MDBBox>
-              <MDBBox tag='h5' className='titre-project mb-3'>
+              <MDBBox tag='h5' className='titre-project mb-3 reseaux'>
                 kevin.aubel@epitech.eu
               </MDBBox>
-              <MDBBox tag='h5' className='titre-project mb-3'>
+              <MDBBox tag='h5' className='titre-project mb-3 reseaux'>
                 06.16.66.31.03
               </MDBBox>
                 
               </MDBCol>
 
               {/* Mon CV */}
-              <MDBCol lg='3' className=' m-3 ' display="flex" justifyContent="center">
+              <MDBCol lg='3' display="flex" justifyContent="center">
               <MDBBox tag='h2' className='titre-project m-5'>Mon CV</MDBBox>
                   <img hover src='/media/CV.png' className='myCV img-fluid' alt='my cv'  onClick={() => {
                     this.setState({ isOpen: true })
