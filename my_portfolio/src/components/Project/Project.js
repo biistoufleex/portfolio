@@ -6,6 +6,25 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 
+// IMAGE CAROUSSEL
+import ecomerce1 from "../../media/ecommerce/image1.png";
+import ecomerce2 from "../../media/ecommerce/image2.png";
+import ecomerce3 from "../../media/ecommerce/image3.png";
+import ecomerce4 from "../../media/ecommerce/image4.png";
+import ecomerce5 from "../../media/ecommerce/image5.png";
+
+import tweeter1 from "../../media/tweeter/image1.png";
+import tweeter2 from "../../media/tweeter/image2.png";
+import tweeter3 from "../../media/tweeter/image3.png";
+
+import game1 from "../../media/puissance4/image1.png";
+import game2 from "../../media/puissance4/image2.png";
+import game3 from "../../media/puissance4/image3.png";
+
+import irc1 from "../../media/irc/image1.png";
+import irc2 from "../../media/irc/image2.png";
+import irc3 from "../../media/irc/image3.png";
+
 import "./Project.css";
 
 class Project extends React.Component {
@@ -52,7 +71,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100 rounded"
-                              src="/media/ecommerce/image1.png"
+                              src={ecomerce1}
                               alt="First slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -69,7 +88,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100 rounded"
-                              src="/media/ecommerce/image2.png"
+                              src={ecomerce2}
                               alt="Second slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -86,7 +105,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100 rounded"
-                              src="/media/ecommerce/image3.png"
+                              src={ecomerce3}
                               alt="Third slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -103,7 +122,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100 rounded"
-                              src="/media/ecommerce/image4.png"
+                              src={ecomerce4}
                               alt="Four slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -120,7 +139,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100 rounded"
-                              src="/media/ecommerce/image5.png"
+                              src={ecomerce5}
                               alt="Five slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -154,7 +173,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100 rounded"
-                              src="/media/tweeter/image1.png"
+                              src={tweeter1}
                               alt="First slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -171,7 +190,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100 rounded"
-                              src="/media/tweeter/image2.png"
+                              src={tweeter2}
                               alt="Second slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -188,7 +207,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100 rounded"
-                              src="/media/tweeter/image3.png"
+                              src={tweeter3}
                               alt="Third slide"
                             />
                            <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -223,7 +242,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100 rounded"
-                              src="/media/puissance4/image1.png"
+                              src={game1}
                               alt="First slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -240,7 +259,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100 rounded"
-                              src="/media/puissance4/image2.png"
+                              src={game2}
                               alt="Second slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -257,7 +276,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100 rounded"
-                              src="/media/puissance4/image3.png"
+                              src={game3}
                               alt="Third slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -291,7 +310,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100 rounded"
-                              src="/media/irc/image1.png"
+                              src={irc1}
                               alt="First slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -308,7 +327,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100 rounded"
-                              src="/media/irc/image2.png"
+                              src={irc2}
                               alt="Second slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
@@ -325,7 +344,7 @@ class Project extends React.Component {
                           <MDBView hover zoom>
                             <img
                               className="d-block w-100 rounded"
-                              src="/media/irc/image3.png"
+                              src={irc3}
                               alt="Third slide"
                             />
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">

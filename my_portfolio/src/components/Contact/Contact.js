@@ -7,8 +7,12 @@ import "mdbreact/dist/css/mdb.css";
 import 'react-image-lightbox/style.css';
 import "./Contact.css";
 
+import JQUERY from "../../media/icones/jquery.png";
+import CV from "../../media/CV.png";
+
+
 const images = [
-  '/media/CV.png',
+  CV,
 ];
 
 class Contact extends React.Component {
@@ -37,7 +41,7 @@ class Contact extends React.Component {
               <MDBCol lg='3'>
               <MDBBox tag='h2' className='titre-project m-5'>Mes Reseaux</MDBBox>
               <MDBBox tag='h5' className='titre-project mb-3'>
-              <img src='/media/icones/jquery.png' className='littleIcones' alt='jquery iconne' />
+              <img src={JQUERY} className='littleIcones' alt='jquery iconne' />
                 <a className='mesLink' href='https://www.linkedin.com/in/kevin-aubel-2095231a8/' target='blank'>Linkedin</a>
               </MDBBox>
               <MDBBox tag='h5' className='titre-project mb-3'>
@@ -55,7 +59,7 @@ class Contact extends React.Component {
               {/* Mon CV */}
               <MDBCol lg='3' display="flex" justifyContent="center">
               <MDBBox tag='h2' className='titre-project m-5'>Mon CV</MDBBox>
-                  <img hover src='/media/CV.png' className='myCV img-fluid' alt='my cv'  onClick={() => {
+                  <img hover src={CV} className='myCV img-fluid' alt='my cv'  onClick={() => {
                     this.setState({ isOpen: true })
                   }} />
               </MDBCol>
