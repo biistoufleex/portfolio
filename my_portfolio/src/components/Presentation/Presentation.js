@@ -4,6 +4,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 
+import profil from "../../media/profil-image.png"
+
 import "./Presentation.css";
 
 class Presentation extends React.Component {
@@ -91,7 +93,7 @@ class Presentation extends React.Component {
                 <MDBAnimation reveal type='zoomIn' duration='2s'>
                     <MDBBox>
                         <img
-                        src="/media/profil-image.png"
+                        src={profil}
                         className="img-fluid rounded-circle profilPic"
                         alt=""
                         />
