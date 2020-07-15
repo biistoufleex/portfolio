@@ -1,0 +1,15 @@
+.footer {
+    background-color: #FE214E;
+    color: rgb(31, 31, 31);
+    position: absolute;
+    width: 100%;
+    margin: 0;
+}
+
+.footer-text{
+    padding: 0.60rem;
+}
+
+.footer-text a:hover{
+    color: black;
+}

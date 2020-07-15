@@ -89,16 +89,16 @@ class Header extends React.Component {
               <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav className='regroup' >
                   <MDBNavItem>
-                    <MDBNavLink className='linkHover pls' onClick={this.scrollToPresentation} to='#'>Presentation</MDBNavLink>    
+                    <MDBNavLink className='linkHover pls' onClick={this.scrollToPresentation} to='#'>Présentation</MDBNavLink>    
                   </MDBNavItem>
                   <MDBNavItem>
                     <MDBNavLink className='linkHover' onClick={this.scrollToProject} to="#">Projets</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink className='linkHover' onClick={this.scrollToCompetence} to="#">Competences</MDBNavLink>
+                    <MDBNavLink className='linkHover' onClick={this.scrollToCompetence} to="#">Compétences</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink className='linkHover' onClick={this.scrollToContact} to="#">Contact</MDBNavLink>
+                    <MDBNavLink className='linkHover' onClick={this.scrollToContact} to="#">Contacts</MDBNavLink>
                   </MDBNavItem>
                 </MDBNavbarNav>
               </MDBCollapse>

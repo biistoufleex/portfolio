@@ -1,4 +1,5 @@
 import React from "react";
+import $ from 'jquery';
 import { MDBContainer, MDBBox, MDBAnimation } from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
@@ -12,9 +13,10 @@ class Presentation extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            titrePresentation: "Une petite presentation s'impose.",
-            restePresentation: " Bienvenue, je m'appelle Kevin et suis en formation pour devenir developpeur web et mobile.\
-            Je suis curieux et passione par la programmation.",
+            titrePresentation: "Une petite présentation s'impose...",
+            restePresentation: "Kevin Aubel, 24 ans, je suis en formation de développeur web et mobile Full-stack au Samsung Campus (Bac +2, RNCP Niveau III).\
+            Passionné, je suis prêt à m’investir pleinement dans une expérience professionnelle concrète qui me tiendra à cœur.\
+            Autonome, curieux de tout et ayant l’esprit logique, j’ai l’envie d’acquérir des compétences techniques variées.",
             TypeEffetEnd: true,
             startEffect: 450
         };
@@ -64,10 +66,11 @@ class Presentation extends React.Component {
                         self.setState({ restePresentation: recupTexte2 })
                         j++;
                       } else {
-                          self.setState({ TypeEffetEnd: true })
-                          clearInterval(timer2);
+                            self.setState({ TypeEffetEnd: true })
+                            $("#merci").fadeIn(3000);
+                            clearInterval(timer2);
                       }
-                  }, 60);
+                  }, 35);
                   clearInterval(timer);
               }
           }, 75);
@@ -103,8 +106,11 @@ class Presentation extends React.Component {
                 <MDBBox display='flex' tag='h3' justifyContent="center">
                     {this.state.titrePresentation}
                 </MDBBox>
-                <MDBBox display='flex' tag='h5' justifyContent="center" id='textePresentation'> 
+                <MDBBox display='flex' tag='h5' justifyContent="center" className='textePresentation'> 
                    {this.state.restePresentation}
+                </MDBBox>
+                <MDBBox tag='h4' justifyContent="center" id='merci' className='mt-5'>
+                    Merci de votre attention et bonne visite !
                 </MDBBox>
                 </MDBBox>
                 {/* <MDBBox display='block' tag='a' justifyContent="center" id='restartTypeEffect' onClick={()=>{

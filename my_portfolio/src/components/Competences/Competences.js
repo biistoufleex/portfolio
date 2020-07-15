@@ -30,24 +30,26 @@ class Competences extends React.Component {
      
     }
   render() {
-    
     return(
         <div>
             <MDBContainer fluid className="text-center d-block p-3 description">
             <MDBRow center>
               <MDBCol size='6'>
               <MDBAnimation reveal>
-                <MDBBox display='flex' tag='h2' justifyContent="center" id='titrePresentation' className='m-5'>
-                    Mes Competences
+                <MDBBox display='flex' tag='h2' justifyContent="center" className='m-5'>
+                    Mes Compétences
                 </MDBBox>
             </MDBAnimation>
               </MDBCol>
             </MDBRow>
 
             <MDBRow center>
-                <MDBBox display='flex' tag='h5' justifyContent="center" id='textePresentation' className='m-7 intro'> 
-                    Cette premiere annee de formation m'a permis d'acquerir des competences solides en PHP et en JS.
-                    <br/> J'ai eu la chance de travailler sur de nombreuses technologies dans des projets en autonomie et en groupe.
+                <MDBBox display='flex' tag='h5' justifyContent="center" className='m-7 intro textePresentation' > 
+                    Cette première année de formation m'a permis de développer des connaissances solides dans les
+                    langages<br /> les plus répandus tels que HTML, CSS, PHP et JavaScript. <br />
+                    J'ai eu la chance de travailler sur de nombreuses technologies en concevant et
+                    développant des projets en autonomie<br />  et en équipe en suivant une méthode Agile. <br />
+                    J’ai appris l’importance de l’organisation et de l’optimisation pour un code de qualité.
                 </MDBBox>
             </MDBRow>
 

@@ -44,7 +44,7 @@ class Contact extends React.Component {
             <MDBRow center> 
               {/* Mes reseaux */}
               <MDBCol lg='3'>
-              <MDBBox tag='h2' className='titre-project m-5'>Mes Reseaux</MDBBox>
+              <MDBBox tag='h2' className='titre-project m-5'>Mes Réseaux</MDBBox>
               <MDBBox tag='h5' className='titre-project mb-3'>
                 <img src={linkedin} className='littleIcones' alt='linkedin iconne' />
                 <a className='mesLink' href='https://www.linkedin.com/in/kevin-aubel-2095231a8/' target='blank'>Linkedin</a>
@@ -76,7 +76,7 @@ class Contact extends React.Component {
               <MDBAnimation reveal type='zoomIn' duration='2s'>
             <MDBRow center>
               <MDBCol size='12'>
-                <MDBBox tag='h2' className='titre-project m-5 mb-7'>Contactez moi !</MDBBox>
+                <MDBBox tag='h2' className='titre-project m-5 mb-7'>Contactez-moi !</MDBBox>
               </MDBCol>
                 <Form />
             </MDBRow>

@@ -29,10 +29,10 @@ export default function Form() {
   }
 
   return (
-    <form id='myForm' className="contact-form" onSubmit={sendEmail}>
+    <form id='myForm' className="contact-form mb-5" onSubmit={sendEmail}>
         <div className="form-group">
             <input type="hidden" name="contact_number" />
-            <label className="label">Prenom</label>
+            <label className="label">Prénom</label>
             <input type="text" className="form-control" name="user_name" />
         </div>
         <div className="form-group">

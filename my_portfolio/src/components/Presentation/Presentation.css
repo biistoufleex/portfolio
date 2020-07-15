@@ -19,9 +19,10 @@
     padding: 4rem;
 }
 
-#textePresentation{
+.textePresentation{
     padding-left: 6rem;
     padding-right: 6rem;
+    line-height: 2rem;
 }
 
 #restartTypeEffect{
@@ -35,4 +36,14 @@
 .profilPic{
     width: 25rem;
     margin-bottom: 3rem;
+}
+
+#merci{
+    display: none;
+}
+
+.look{
+    width: auto;
+    height: auto;
+    color: chocolate;
 }
