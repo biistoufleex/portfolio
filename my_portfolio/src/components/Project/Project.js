@@ -77,8 +77,6 @@ class Project extends React.Component {
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Project de un mois realiser en equipe de 7.
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer en React - Laravel - SQL 
                               </MDBBox>
                             </MDBMask>
@@ -94,8 +92,6 @@ class Project extends React.Component {
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Project de un mois realiser en equipe de 7.
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer en React - Laravel - SQL 
                               </MDBBox>
                             </MDBMask>
@@ -111,8 +107,6 @@ class Project extends React.Component {
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Project de un mois realiser en equipe de 7.
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer en React - Laravel - SQL 
                               </MDBBox>
                             </MDBMask>
@@ -128,8 +122,6 @@ class Project extends React.Component {
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Project de un mois realiser en equipe de 7.
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer en React - Laravel - SQL 
                               </MDBBox>
                             </MDBMask>
@@ -145,8 +137,6 @@ class Project extends React.Component {
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Project de un mois realiser en equipe de 7.
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer en React - Laravel - SQL 
                               </MDBBox>
                             </MDBMask>
@@ -179,8 +169,6 @@ class Project extends React.Component {
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Project de 2 semaines realise en equipe de 4.
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer en PHP
                               </MDBBox>
                             </MDBMask>
@@ -196,8 +184,6 @@ class Project extends React.Component {
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Project de 2 semaines realise en equipe de 4.
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer en PHP
                               </MDBBox>
                             </MDBMask>
@@ -213,8 +199,6 @@ class Project extends React.Component {
                            <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Project de 2 semaines realise en equipe de 4.
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer en PHP
                               </MDBBox>
                             </MDBMask>
@@ -248,8 +232,6 @@ class Project extends React.Component {
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Project individuelle realise en quelque jours
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer JQuery
                               </MDBBox>
                             </MDBMask>
@@ -265,8 +247,6 @@ class Project extends React.Component {
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Project individuelle realise en quelque jours
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer JQuery
                               </MDBBox>
                             </MDBMask>
@@ -282,8 +262,6 @@ class Project extends React.Component {
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Project individuelle realise en quelque jours
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer JQuery
                               </MDBBox>
                             </MDBMask>
@@ -316,8 +294,6 @@ class Project extends React.Component {
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Project de une semaine realise en duo.
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer avec NodeJS React socket.io et express
                               </MDBBox>
                             </MDBMask>
@@ -333,8 +309,6 @@ class Project extends React.Component {
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Project de une semaine realise en duo.
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer avec NodeJS React socket.io et express
                               </MDBBox>
                             </MDBMask>
@@ -350,8 +324,6 @@ class Project extends React.Component {
                             <MDBMask className="d-flex align-items-stretch" overlay="red-strong">
                               <MDBBox tag='h4' className='white-text vertical-center'>
                                 Project de une semaine realise en duo.
-                              </MDBBox>
-                              <MDBBox tag='h4' className='white-text vertical-center'>
                                 Developer avec NodeJS React socket.io et express
                               </MDBBox>
                             </MDBMask>

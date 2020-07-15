@@ -1,0 +1,22 @@
+form{
+    width: 100%;
+}
+
+label{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.form-control{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+@media (max-width: 580px) {
+    .form-control{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}

@@ -1,13 +1,18 @@
 import React from "react";
 import Lightbox from 'react-image-lightbox';
-import { MDBContainer, MDBBox, MDBView, MDBRow, MDBCol } from 'mdbreact';
+import { MDBContainer, MDBBox, MDBAnimation, MDBRow, MDBCol } from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import 'react-image-lightbox/style.css';
 import "./Contact.css";
 
-import JQUERY from "../../media/icones/jquery.png";
+import Form from "./Form/Form";
+
+import linkedin from "../../media/icones/linkedin.svg";
+import github from "../../media/icones/github.svg";
+import email from "../../media/icones/email.svg";
+import phone from "../../media/icones/phone.svg";
 import CV from "../../media/CV.png";
 
 
@@ -41,16 +46,19 @@ class Contact extends React.Component {
               <MDBCol lg='3'>
               <MDBBox tag='h2' className='titre-project m-5'>Mes Reseaux</MDBBox>
               <MDBBox tag='h5' className='titre-project mb-3'>
-              <img src={JQUERY} className='littleIcones' alt='jquery iconne' />
+                <img src={linkedin} className='littleIcones' alt='linkedin iconne' />
                 <a className='mesLink' href='https://www.linkedin.com/in/kevin-aubel-2095231a8/' target='blank'>Linkedin</a>
               </MDBBox>
               <MDBBox tag='h5' className='titre-project mb-3'>
+                <img src={github} className='littleIcones' alt='github iconne' />
                 <a href='https://github.com/biistoufleex' target='blank'>Github</a>
               </MDBBox>
               <MDBBox tag='h5' className='titre-project mb-3 reseaux'>
+                <img src={email} className='littleIcones' alt='email iconne' />
                 kevin.aubel@epitech.eu
               </MDBBox>
               <MDBBox tag='h5' className='titre-project mb-3 reseaux'>
+                <img src={phone} className='littleIcones' alt='phone iconne' />
                 06.16.66.31.03
               </MDBBox>
                 
@@ -64,6 +72,15 @@ class Contact extends React.Component {
                   }} />
               </MDBCol>
             </MDBRow>
+
+              <MDBAnimation reveal type='zoomIn' duration='2s'>
+            <MDBRow center>
+              <MDBCol size='12'>
+                <MDBBox tag='h2' className='titre-project m-5 mb-7'>Contactez moi !</MDBBox>
+              </MDBCol>
+                <Form />
+            </MDBRow>
+              </MDBAnimation>
             </MDBContainer>
 
             {isOpen && (
@@ -82,6 +99,7 @@ class Contact extends React.Component {
                 }
               />
             )}
+
 
       </div>
     )
