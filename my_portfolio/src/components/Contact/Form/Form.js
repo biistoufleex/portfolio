@@ -1,7 +1,5 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn, MDBIcon } from 'mdbreact';
-
 
 import './Form.css';
 
@@ -24,7 +22,6 @@ export default function Form() {
       document.getElementById("myForm").reset();
     } else {
         alert("Veuillez preciser votre nom et un email valide pour me permettre de vous repondre")
-        
     }
   }
 

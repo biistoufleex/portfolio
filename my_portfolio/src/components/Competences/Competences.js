@@ -15,6 +15,8 @@ import SOCKET from "../../media/icones/socketio.png";
 import BDD from "../../media/icones/bdd.png";
 import SQL from "../../media/icones/sql.png";
 import MONGO from "../../media/icones/mongo.png";
+import NODE from "../../media/icones/nodeJS.png";
+
 
 import "./Competences.css";
 
@@ -89,6 +91,10 @@ class Competences extends React.Component {
                         <MDBBox tag='h5' className='language'>
                             <img src={SOCKET} className='littleIcones' alt='socket.io iconne'/>
                             Socket.io
+                        </MDBBox>
+                        <MDBBox tag='h5' className='language'>
+                            <img src={NODE} className='littleIcones' alt='node iconne'/>
+                            Node.js
                         </MDBBox>
                     </MDBAnimation>
                 </MDBCol>

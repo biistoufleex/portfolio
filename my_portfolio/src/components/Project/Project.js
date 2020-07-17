@@ -25,6 +25,20 @@ import irc1 from "../../media/irc/image1.png";
 import irc2 from "../../media/irc/image2.png";
 import irc3 from "../../media/irc/image3.png";
 
+//ICONES
+import REACT from "../../media/icones/react.png";
+import LARAVEL from "../../media/icones/laravel.png";
+import SQL from "../../media/icones/sql.png";
+import PHP from "../../media/icones/php.png";
+import html from "../../media/icones/html.png";
+import css from "../../media/icones/css.png";
+import JQUERY from "../../media/icones/jquery.png";
+import SOCKET from "../../media/icones/socketio.png";
+import node from "../../media/icones/nodeJS.png";
+
+
+
+
 import "./Project.css";
 
 class Project extends React.Component {
@@ -81,6 +95,13 @@ class Project extends React.Component {
                                 Site de vente en ligne: <br />
                                 projet d'un mois en équipe de 7 <br />
                                 REACT - Laravel - SQL
+                                <MDBRow center>
+                                  <MDBCol className='d-flex justify-content-center'>
+                                    <img src={REACT} className='maskIcones' alt='react iconne' />
+                                    <img src={LARAVEL} className='maskIcones' alt='LARAVEL iconne' />
+                                    <img src={SQL} className='maskIcones' alt='SQL iconne' />
+                                  </MDBCol>
+                                </MDBRow>
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -97,6 +118,13 @@ class Project extends React.Component {
                                 Site de vente en ligne: <br />
                                 projet d'un mois en équipe de 7 <br />
                                 <b>REACT - Laravel - SQL</b>
+                                <MDBRow center>
+                                  <MDBCol className='d-flex justify-content-center'>
+                                    <img src={REACT} className='maskIcones' alt='react iconne' />
+                                    <img src={LARAVEL} className='maskIcones' alt='LARAVEL iconne' />
+                                    <img src={SQL} className='maskIcones' alt='SQL iconne' />
+                                  </MDBCol>
+                                </MDBRow>
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -113,6 +141,13 @@ class Project extends React.Component {
                                 Site de vente en ligne: <br />
                                 projet d'un mois en équipe de 7 <br />
                                 <b>REACT - Laravel - SQL</b>
+                                <MDBRow center>
+                                  <MDBCol className='d-flex justify-content-center'>
+                                    <img src={REACT} className='maskIcones' alt='react iconne' />
+                                    <img src={LARAVEL} className='maskIcones' alt='LARAVEL iconne' />
+                                    <img src={SQL} className='maskIcones' alt='SQL iconne' />
+                                  </MDBCol>
+                                </MDBRow>
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -129,6 +164,13 @@ class Project extends React.Component {
                                 Site de vente en ligne: <br />
                                 projet d'un mois en équipe de 7 <br />
                                 <b>REACT - Laravel - SQL</b>
+                                <MDBRow center>
+                                  <MDBCol className='d-flex justify-content-center'>
+                                    <img src={REACT} className='maskIcones' alt='react iconne' />
+                                    <img src={LARAVEL} className='maskIcones' alt='LARAVEL iconne' />
+                                    <img src={SQL} className='maskIcones' alt='SQL iconne' />
+                                  </MDBCol>
+                                </MDBRow>
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -145,6 +187,13 @@ class Project extends React.Component {
                                 Site de vente en ligne: <br />
                                 projet d'un mois en équipe de 7 <br />
                                 <b>REACT - Laravel - SQL</b>
+                                <MDBRow center>
+                                  <MDBCol className='d-flex justify-content-center'>
+                                    <img src={REACT} className='maskIcones' alt='react iconne' />
+                                    <img src={LARAVEL} className='maskIcones' alt='LARAVEL iconne' />
+                                    <img src={SQL} className='maskIcones' alt='SQL iconne' />
+                                  </MDBCol>
+                                </MDBRow>
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -178,6 +227,13 @@ class Project extends React.Component {
                                 Tweeter like: <br />
                                 projet d'une semaine en équipe de 4 <br />
                                 PHP NATIF - HTML - CSS
+                                <MDBRow center>
+                                  <MDBCol className='d-flex justify-content-center'>
+                                    <img src={PHP} className='maskIcones' alt='react iconne' />
+                                    <img src={html} className='maskIcones' alt='LARAVEL iconne' />
+                                    <img src={css} className='maskIcones' alt='SQL iconne' />
+                                  </MDBCol>
+                                </MDBRow>
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -194,6 +250,13 @@ class Project extends React.Component {
                                 Tweeter like: <br />
                                 projet d'une semaine en équipe de 4 <br />
                                 PHP NATIF - HTML - CSS
+                                <MDBRow center>
+                                  <MDBCol className='d-flex justify-content-center'>
+                                    <img src={PHP} className='maskIcones' alt='react iconne' />
+                                    <img src={html} className='maskIcones' alt='LARAVEL iconne' />
+                                    <img src={css} className='maskIcones' alt='SQL iconne' />
+                                  </MDBCol>
+                                </MDBRow>
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -210,6 +273,13 @@ class Project extends React.Component {
                                 Tweeter like: <br />
                                 projet d'une semaine en équipe de 4 <br />
                                 PHP NATIF - HTML - CSS
+                                <MDBRow center>
+                                  <MDBCol className='d-flex justify-content-center'>
+                                    <img src={PHP} className='maskIcones' alt='react iconne' />
+                                    <img src={html} className='maskIcones' alt='LARAVEL iconne' />
+                                    <img src={css} className='maskIcones' alt='SQL iconne' />
+                                  </MDBCol>
+                                </MDBRow>
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -244,6 +314,11 @@ class Project extends React.Component {
                                 Puissance 4: <br />
                                 projet individuel d'une semaine <br />
                                 JQuery
+                                <MDBRow center>
+                                  <MDBCol className='d-flex justify-content-center'>
+                                    <img src={JQUERY} className='maskIcones' alt='jquery iconne' />
+                                  </MDBCol>
+                                </MDBRow>
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -260,6 +335,11 @@ class Project extends React.Component {
                                 Puissance 4: <br />
                                 projet individuel d'une semaine <br />
                                 JQuery
+                                <MDBRow center>
+                                  <MDBCol className='d-flex justify-content-center'>
+                                    <img src={JQUERY} className='maskIcones' alt='jquery iconne' />
+                                  </MDBCol>
+                                </MDBRow>
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -276,6 +356,11 @@ class Project extends React.Component {
                                 Puissance 4: <br />
                                 projet individuel d'une semaine <br />
                                 JQuery
+                                <MDBRow center>
+                                  <MDBCol className='d-flex justify-content-center'>
+                                    <img src={JQUERY} className='maskIcones' alt='jquery iconne' />
+                                  </MDBCol>
+                                </MDBRow>
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -309,6 +394,13 @@ class Project extends React.Component {
                                 Système de chat: <br />
                                 projet d'une semaine en duo<br />
                                 NODE.JS - REACT - SOCKET.IO - EXPRESS
+                                <MDBRow center>
+                                  <MDBCol className='d-flex justify-content-center'>
+                                    <img src={node} className='maskIcones' alt='node iconne' />
+                                    <img src={REACT} className='maskIcones' alt='react iconne' />
+                                    <img src={SOCKET} className='maskIcones' alt='socket iconne' />
+                                  </MDBCol>
+                                </MDBRow>
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -325,6 +417,13 @@ class Project extends React.Component {
                                 Système de chat: <br />
                                 projet d'une semaine en duo<br />
                                 NODE.JS - REACT - SOCKET.IO - EXPRESS
+                                <MDBRow center>
+                                  <MDBCol className='d-flex justify-content-center'>
+                                    <img src={node} className='maskIcones' alt='node iconne' />
+                                    <img src={REACT} className='maskIcones' alt='react iconne' />
+                                    <img src={SOCKET} className='maskIcones' alt='socket iconne' />
+                                  </MDBCol>
+                                </MDBRow>
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
@@ -341,6 +440,13 @@ class Project extends React.Component {
                                 Système de chat: <br />
                                 projet d'une semaine en duo<br />
                                 NODE.JS - REACT - SOCKET.IO - EXPRESS
+                                <MDBRow center>
+                                  <MDBCol className='d-flex justify-content-center'>
+                                    <img src={node} className='maskIcones' alt='node iconne' />
+                                    <img src={REACT} className='maskIcones' alt='react iconne' />
+                                    <img src={SOCKET} className='maskIcones' alt='socket iconne' />
+                                  </MDBCol>
+                                </MDBRow>
                               </MDBBox>
                             </MDBMask>
                           </MDBView>
