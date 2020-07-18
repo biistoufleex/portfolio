@@ -1,6 +1,6 @@
 import React from "react";
 import Lightbox from 'react-image-lightbox';
-import { MDBContainer, MDBBox, MDBAnimation, MDBRow, MDBCol } from 'mdbreact';
+import { MDBContainer, MDBBox, MDBAnimation, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
@@ -65,11 +65,14 @@ class Contact extends React.Component {
               </MDBCol>
 
               {/* Mon CV */}
-              <MDBCol lg='3' display="flex" justifyContent="center">
+              <MDBCol lg='3' display="d-block" justifyContent="center">
               <MDBBox tag='h2' className='titre-project m-5'>Mon CV</MDBBox>
                   <img hover src={CV} className='myCV img-fluid' alt='my cv'  onClick={() => {
                     this.setState({ isOpen: true })
                   }} />
+              <MDBRow center>
+                <MDBBtn outline color="danger" className='mt-3' href='https://anonfiles.com/15O5FfG3oa/AUBEL_Kevin_CV_pdf' target='blank'>Telecharger CV</MDBBtn>
+              </MDBRow>
               </MDBCol>
             </MDBRow>
 
